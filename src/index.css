@@ -9,17 +9,20 @@ body {
 }
 
 .app {
-  background-image: url('./assets/cloudy.jpg');
+  background-image: url('./assets/clear.jpg');
   background-size: cover;
   background-position: bottom;
-  transition: 0.4 ease-out;
+  transition: 0.4 ease-in-out;
 }
 
-.app.clear{
-  background-image: url('./assets/clear.jpg');
+.app.clouds{
+  background-image: url('./assets/clouds.jpg');
 }
-.app.lightening{
-  background-image: url('./assets/lightening.jpg');
+.app.rain{
+  background-image: url('./assets/rain.jpg');
+}
+.app.thunderstorm{
+  background-image: url('./assets/thunderstorm.jpg');
 }
 .app.snow{
   background-image: url('./assets/snow.jpg');
