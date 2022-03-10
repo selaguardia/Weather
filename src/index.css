@@ -114,3 +114,18 @@ main {
   font-weight: 700;
   text-shadow: 3px 3px Irgba (50, 50, 70, 0.5);
 }
+
+.welcomeScreen {
+  display: flex;
+  justify-content: center;
+}
+
+.welcomeScreen h1 {
+  background-color: rgba(0,0,0,0.3);
+  color:white;
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+

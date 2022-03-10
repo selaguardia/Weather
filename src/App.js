@@ -39,7 +39,7 @@ function App() {
           <input
             type="text"
             className="search-bar"
-            placeholder="Enter Zip Code"
+            placeholder="Enter Zip Code or City Name"
             onChange={e => setQuery(e.target.value)}
             value={query}
             onKeyPress={search}
@@ -61,9 +61,27 @@ function App() {
                 {weather.weather[0].main}
               </div>
             </div>
-
+            <div className="container boxContainer">
+              <div className="box">
+                <p>Min: {Math.round(weather.main.temp_min)} ºF</p>
+                <p>Max: {Math.round(weather.main.temp_max)} ºF</p>
+              </div>
+              <div className="box">
+                <p>Feels Like: {Math.round(weather.main.feels_like)} ºF</p>
+              </div>
+              <div className="box">
+                <p>Humidity: {Math.round(weather.main.humidity)}%</p>
+              </div>
+              <div className='box'>
+                <p>Sunrise:{weather.sys.sunrise}</p>
+                <p>Sunset: </p>
+              </div>
+            </div>
           </div>
-        ) : ('') }
+        ) : (
+        <div className="welcomeScreen">
+          <h1>Please enter a Zip Code or City above to get current weather temperatures.</h1>
+        </div>) }
       </main>
     </div>
   );
